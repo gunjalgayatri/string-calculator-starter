@@ -27,6 +27,13 @@ class StringCalculatorShould {
 		assertEquals(calculator.calculator(""),0);
 	}
 
+	//2.A single number value return  
+		//Result
+		//passed 1 --> return 1
+		public void singleValueIsReplied() throws Exception {
+			assertEquals(calculator.calculator("1"),1) ;	
+		}
+
 	
 	
 }

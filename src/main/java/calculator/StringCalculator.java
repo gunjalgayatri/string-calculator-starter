@@ -2,7 +2,7 @@ package calculator;
 
 class StringCalculator {
 
-	public int calculator(String string) {	
+	/*public int calculator(String string) {	
 		 return 0;
 		 
 		 //pass result
@@ -13,8 +13,16 @@ class StringCalculator {
 //		//return -1;
 //		//Tests run: 1, Failures: 1, Skips: 0
 //	
-		 }
-
-
+		 }*/
+	
+	public int calculator(String string) {	
+		
+	  if(string.isEmpty()) {
+	      return 0;
+	      }
+		  return Integer.parseInt(string);
+		
+	}
+   //Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
 
 }
