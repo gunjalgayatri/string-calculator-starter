@@ -27,7 +27,7 @@ class StringCalculator {
 
 	
 	
-	public int calculator(String input) {	
+	/*public int calculator(String input) {	
 		
 		String []numbers =input.split(",");
 		
@@ -47,8 +47,40 @@ class StringCalculator {
 	}
 	private int stringToInt(String input) {
 		return Integer.parseInt(input);
-	} 
+	}*/ 
 	//Total tests run: 3, Passes: 3, Failures: 0, Skips: 0
 
 	
-}	
+	public int calculator(String input) {	
+		
+		String []numbers =input.split(",|\n");
+		
+		  if(isEmpty(input)) {
+	      return 0;
+	      }
+		  if(input.length()==1) {
+			  return stringToInt(input);
+		  }
+		  else  {
+			return getSum(numbers[0], numbers[1]) ;
+		  }
+	}
+
+	//Refactor
+	private int getSum(String numA, String numB) {
+		return Integer.parseInt(numA)+Integer.parseInt(numB);
+	}
+	
+	private boolean isEmpty(String input) {
+		return input.isEmpty();
+	}
+	
+	private int stringToInt(String input) {
+		return Integer.parseInt(input);
+	}
+	//Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+	
+	
+	}
+	
+	

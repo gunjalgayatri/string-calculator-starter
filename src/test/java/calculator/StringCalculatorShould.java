@@ -44,6 +44,13 @@ class StringCalculatorShould {
 			assertEquals(calculator.calculator("1,2"),3) ;
 		}
 		
-	
+	  //4.Two numbers ,newline dilimited return the sum.
+		//Result
+		//output 1 new line 2 ---> 3
+	    @Test
+		public void twoNumberNewLineDilimter() throws Exception {
+			assertEquals(calculator.calculator("1\n2"),3) ;
+		 }
+		
 	
 }
