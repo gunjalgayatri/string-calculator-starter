@@ -118,7 +118,7 @@ class StringCalculator {
  
 
     
-    
+ /*   
   public int calculator(String input) throws Exception {	
 	
 	//refactor
@@ -160,8 +160,59 @@ private boolean isEmpty(String input) {
 
 private int stringToInt(String input) {
 	return Integer.parseInt(input);
+}*/
+
+//Total tests run: 6, Passes: 6, Failures: 0, Skips: 0
+	
+
+public int calculator(String input) throws Exception {	
+	
+	//refactor
+	final String delimiter= ",|\n";
+	String []numbers =input.split(delimiter );
+	
+	  if(isEmpty(input)) {
+return 0;
+}
+	  if(input.length()==1) {
+		  return stringToInt(input);
+	  }
+	  else  {
+		return getSum(numbers) ;
+	  }
 }
 
+//Refactor
+private int getSum(String [] numbers) throws Exception {
+
+	findDangerousInput(numbers);
+	
+	int sum=0;
+	//refactor
+	for (String current:numbers) {
+		sum+= 	stringToInt(current);
+	}
+	return sum;
+}
+
+
+//refactor
+private void findDangerousInput(String[] numbers	) throws Exception {
+	
+	for(String current :numbers) {
+		if(stringToInt(current )<0) {
+			throw new Exception("Negative Input ");
+		}
+	}
+}
+
+private boolean isEmpty(String input) {
+	return input.isEmpty();
+}
+
+private int stringToInt(String input) {
+	return Integer.parseInt(input);
+}
 //Total tests run: 6, Passes: 6, Failures: 0, Skips: 0
 }
 

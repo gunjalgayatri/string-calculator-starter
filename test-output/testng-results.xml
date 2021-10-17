@@ -2,28 +2,29 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-17T17:24:57 IST" name="Default suite" finished-at="2021-10-17T17:24:58 IST" duration-ms="527">
+  <suite started-at="2021-10-17T17:29:10 IST" name="Default suite" finished-at="2021-10-17T17:29:10 IST" duration-ms="241">
     <groups>
     </groups>
-    <test started-at="2021-10-17T17:24:57 IST" name="Default test" finished-at="2021-10-17T17:24:58 IST" duration-ms="527">
+    <test started-at="2021-10-17T17:29:10 IST" name="Default test" finished-at="2021-10-17T17:29:10 IST" duration-ms="241">
       <class name="calculator.StringCalculatorShould">
-        <test-method is-config="true" signature="init()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="init" finished-at="2021-10-17T17:24:58 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="init" finished-at="2021-10-17T17:29:10 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="emptyStringReturnzero()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="emptyStringReturnzero" finished-at="2021-10-17T17:24:58 IST" duration-ms="27" status="PASS">
+        <test-method signature="emptyStringReturnzero()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="emptyStringReturnzero" finished-at="2021-10-17T17:29:10 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyStringReturnzero -->
-        <test-method signature="negativeNumberException()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="negativeNumberException" finished-at="2021-10-17T17:24:58 IST" duration-ms="9" status="PASS">
+        <test-method signature="negativeNumberException()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="negativeNumberException" finished-at="2021-10-17T17:29:10 IST" duration-ms="4" status="PASS">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[Negative Input ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.Exception: Negative Input 
-at calculator.StringCalculator.getSum(StringCalculator.java:144)
-at calculator.StringCalculator.calculator(StringCalculator.java:135)
+at calculator.StringCalculator.findDangerousInput(StringCalculator.java:204)
+at calculator.StringCalculator.getSum(StringCalculator.java:188)
+at calculator.StringCalculator.calculator(StringCalculator.java:181)
 at calculator.StringCalculatorShould.negativeNumberException(StringCalculatorShould.java:67)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -59,19 +60,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeNumberException -->
-        <test-method signature="singleValueIsReplied()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="singleValueIsReplied" finished-at="2021-10-17T17:24:58 IST" duration-ms="8" status="PASS">
+        <test-method signature="singleValueIsReplied()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="singleValueIsReplied" finished-at="2021-10-17T17:29:10 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleValueIsReplied -->
-        <test-method signature="threeNumbersDelimitedBoth()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="threeNumbersDelimitedBoth" finished-at="2021-10-17T17:24:58 IST" duration-ms="4" status="PASS">
+        <test-method signature="threeNumbersDelimitedBoth()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="threeNumbersDelimitedBoth" finished-at="2021-10-17T17:29:10 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- threeNumbersDelimitedBoth -->
-        <test-method signature="twoNumberNewLineDilimter()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="twoNumberNewLineDilimter" finished-at="2021-10-17T17:24:58 IST" duration-ms="5" status="PASS">
+        <test-method signature="twoNumberNewLineDilimter()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="twoNumberNewLineDilimter" finished-at="2021-10-17T17:29:10 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumberNewLineDilimter -->
-        <test-method signature="twoNumbersCommaDelimited()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:24:58 IST" name="twoNumbersCommaDelimited" finished-at="2021-10-17T17:24:58 IST" duration-ms="6" status="PASS">
+        <test-method signature="twoNumbersCommaDelimited()[pri:0, instance:calculator.StringCalculatorShould@7671cb68]" started-at="2021-10-17T17:29:10 IST" name="twoNumbersCommaDelimited" finished-at="2021-10-17T17:29:10 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersCommaDelimited -->
