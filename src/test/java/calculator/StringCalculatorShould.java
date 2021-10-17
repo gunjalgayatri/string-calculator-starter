@@ -30,10 +30,20 @@ class StringCalculatorShould {
 	//2.A single number value return  
 		//Result
 		//passed 1 --> return 1
+	    @Test
 		public void singleValueIsReplied() throws Exception {
 			assertEquals(calculator.calculator("1"),1) ;	
 		}
 
+	    
+	  //3.Two numbers comma delimited return sum
+		//Result
+		//Output must 1+2 ---> 3
+	    @Test
+		public void twoNumbersCommaDelimited() throws Exception {
+			assertEquals(calculator.calculator("1,2"),3) ;
+		}
+		
 	
 	
 }
