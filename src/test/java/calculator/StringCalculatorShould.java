@@ -59,7 +59,14 @@ class StringCalculatorShould {
 	    		public void threeNumbersDelimitedBoth() throws Exception {
 	    			assertEquals(calculator.calculator("1,2,3"),6) ;
 	    		}
-	    		
+	       	//Negative number throws exception
+	       	//Result.
+	       	//
+	       	@Test(expectedExceptions=Exception.class)
+	       	public void negativeNumberException() throws Exception {
+	       	   calculator.calculator("-1") ; 
+	       	}
+
 	    		
 	    		
 	    	}
