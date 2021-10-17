@@ -52,5 +52,18 @@ class StringCalculatorShould {
 			assertEquals(calculator.calculator("1\n2"),3) ;
 		 }
 		
+	   // 5.Three numbers ,delimited either way, return sum
+	    		//Result
+	    		// 1+2+3-------> 6
+	           @Test
+	    		public void threeNumbersDelimitedBoth() throws Exception {
+	    			assertEquals(calculator.calculator("1,2,3"),6) ;
+	    		}
+	    		
+	    		
+	    		
+	    	}
+
+
 	
-}
+

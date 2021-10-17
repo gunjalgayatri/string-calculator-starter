@@ -51,7 +51,7 @@ class StringCalculator {
 	//Total tests run: 3, Passes: 3, Failures: 0, Skips: 0
 
 	
-	public int calculator(String input) {	
+	/*public int calculator(String input) {	
 		
 		String []numbers =input.split(",|\n");
 		
@@ -77,10 +77,50 @@ class StringCalculator {
 	
 	private int stringToInt(String input) {
 		return Integer.parseInt(input);
-	}
+	}*/
 	//Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
 	
 	
-	}
+	public int calculator(String input) {	
+    	
+    	//refactor
+    	final String delimiter= ",|\n";
+    	String []numbers =input.split(delimiter );
+    	
+	  if(isEmpty(input)) {
+        return 0;
+    }
+    	  if(input.length()==1) {
+    		  return stringToInt(input);
+    	  }
+    	  else  {
+    	return getSum(numbers) ;
+    	  }
+    }
+
+    //Refactor
+    private int getSum(String [] numbers) {
+	int sum=0;
+    	for (int current = 0; current < numbers.length; current++) {
+    		sum+= Integer.parseInt(numbers[current]);
+    	}
+    	return sum;
+    }
+    
+    private boolean isEmpty(String input) {
+    	return input.isEmpty();
+    }
+    
+    private int stringToInt(String input) {
+    	return Integer.parseInt(input);
+    }
+    //Total tests run: 5, Passes: 5, Failures: 0, Skips: 0
+ 
+
+    }
+
+	
+	
+	
 	
 	
